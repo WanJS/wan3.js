@@ -582,7 +582,7 @@ Example
             "transactionIndex": 0,
             "blockHash": "0xef95f2f1ed3ca60b048b4bf67cde2195961e0bba6f70bcbea9a2c4e133e34b46",
             "blockNumber": 3,
-            "contractAddress": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+            "contractAddress": "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE",
             "cumulativeGasUsed": 314159,
             "gasUsed": 30234,
             "events": {

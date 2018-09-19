@@ -119,7 +119,6 @@ var runTests = function (obj, method, tests) {
                             } else {
                                 w3 = web3[obj];
                             }
-
                             result = w3[method].apply(w3, args);
                         } else {
                             result = web3[method].apply(web3, args);
@@ -133,7 +132,7 @@ var runTests = function (obj, method, tests) {
                                     "blockNumber": 5599,
                                     "transactionHash":"0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b",
                                     "transactionIndex":  1,
-                                    "contractAddress":"0x407D73d8a49eeb85D32Cf465507dd71d507100c1", // checksum address
+                                    "contractAddress":"0x407d73D8A49EEB85d32cF465507DD71D507100C1", // checksum address
                                     "cumulativeGasUsed": 520464,
                                     "gasUsed": 520464
                                 });

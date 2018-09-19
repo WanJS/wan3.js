@@ -21,8 +21,8 @@ var formattedTxResult = {
     "blockHash": "0x6fd9e2a26ab",
     "blockNumber": 5599,
     "transactionIndex":  1,
-    "from":"0x407D73d8a49eeb85D32Cf465507dd71d507100c1", // checksum address
-    "to":"0x85F43D8a49eeB85d32Cf465507DD71d507100C1d", // checksum address
+    "from":"0x407d73D8A49EEB85d32cF465507DD71D507100C1", // checksum address
+    "to":"0x85f43d8A49EEb85D32cF465507dd71D507100c1D", // checksum address
     "value": '520464',
     "gas": 520464,
     "gasPrice": '10000000000000',

@@ -29,7 +29,7 @@ This will expose the `Web3Personal` object on the window object.
 
 ```js
 // in node.js
-var Web3Personal = require('web3-shh');
+var Web3Personal = require('wan3-shh');
 
 var shh = new Web3Personal('ws://localhost:8546');
 ```

@@ -6,7 +6,7 @@ var tests = [{
     input: {
         data: '0x34234bf23bf4234',
         value: '100',
-        from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe', // checksum address
+        from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE', // checksum address
         to: '0x11f4d0a3c12e86b4b5f39b213f7e19d048276dae',
         nonce: 1000,
         gas: 1000,
@@ -26,7 +26,7 @@ var tests = [{
         data: '0x34234bf23bf4234',
         value: '100',
         from: '00c5496aee77c1ba1f0854206a26dda82a81d6d8',
-        to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe' // checksum address
+        to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE' // checksum address
     },
     result: {
         data: '0x34234bf23bf4234',

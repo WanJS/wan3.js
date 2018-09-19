@@ -5,7 +5,7 @@ var Eth = require('../packages/web3-eth/');
 
 var name = 'event1';
 var address = '0xffddb67890123456789012345678901234567890';
-var resultAddress = '0xffdDb67890123456789012345678901234567890';
+var resultAddress = '0xFFDdB67890123456789012345678901234567890';
 
 var tests = [{
     abi: {

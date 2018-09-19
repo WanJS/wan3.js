@@ -42,7 +42,7 @@ Example
 .. code-block:: javascript
 
     web3.eth.getAccounts(console.log);
-    > ["0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe" ,"0x85F43D8a49eeB85d32Cf465507DD71d507100C1d"]
+    > ["0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE" ,"0x85F43D8a49eeB85d32Cf465507DD71d507100C1d"]
 
 
 ------------------------------------------------------------------------------
@@ -157,7 +157,7 @@ Example
     > undefined
 
     // set the default account
-    web3.eth.defaultAccount = '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe';
+    web3.eth.defaultAccount = '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE';
 
 
 ------------------------------------------------------------------------------
@@ -310,7 +310,7 @@ Example
 
     web3.eth.getCoinbase()
     .then(console.log);
-    > "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe"
+    > "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE"
 
 
 ------------------------------------------------------------------------------
@@ -436,7 +436,7 @@ Example
 
     web3.eth.getAccounts()
     .then(console.log);
-    > ["0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "0xDCc6960376d6C6dEa93647383FfB245CfCed97Cf"]
+    > ["0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE", "0xDCc6960376d6C6dEa93647383FfB245CfCed97Cf"]
 
 
 ------------------------------------------------------------------------------
@@ -919,7 +919,7 @@ Example
       "transactionIndex": 0,
       "blockHash": "0xef95f2f1ed3ca60b048b4bf67cde2195961e0bba6f70bcbea9a2c4e133e34b46",
       "blockNumber": 3,
-      "contractAddress": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+      "contractAddress": "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE",
       "cumulativeGasUsed": 314159,
       "gasUsed": 30234,
       "logs": [{
@@ -964,7 +964,7 @@ Example
 
 .. code-block:: javascript
 
-    web3.eth.getTransactionCount("0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe")
+    web3.eth.getTransactionCount("0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE")
     .then(console.log);
     > 1
 
@@ -1036,7 +1036,7 @@ Example
     // using the promise
     web3.eth.sendTransaction({
         from: '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe',
-        to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+        to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
         value: '1000000000000000'
     })
     .then(function(receipt){
@@ -1047,7 +1047,7 @@ Example
     // using the event emitter
     web3.eth.sendTransaction({
         from: '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe',
-        to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+        to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
         value: '1000000000000000'
     })
     .on('transactionHash', function(hash){
@@ -1161,12 +1161,12 @@ Example
 
 .. code-block:: javascript
 
-    web3.eth.sign("Hello world", "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe")
+    web3.eth.sign("Hello world", "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE")
     .then(console.log);
     > "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
 
     // the below is the same
-    web3.eth.sign(web3.utils.utf8ToHex("Hello world"), "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe")
+    web3.eth.sign(web3.utils.utf8ToHex("Hello world"), "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE")
     .then(console.log);
     > "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
 
@@ -1266,7 +1266,7 @@ Example
 .. code-block:: javascript
 
     web3.eth.call({
-        to: "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", // contract address
+        to: "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE", // contract address
         data: "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
     })
     .then(console.log);
@@ -1308,7 +1308,7 @@ Example
 .. code-block:: javascript
 
     web3.eth.estimateGas({
-        to: "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+        to: "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE",
         data: "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
     })
     .then(console.log);
@@ -1364,7 +1364,7 @@ Example
 .. code-block:: javascript
 
     web3.eth.getPastLogs({
-        address: "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+        address: "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE",
         topics: ["0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"]
     })
     .then(console.log);

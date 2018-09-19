@@ -29,7 +29,7 @@ This will expose the `Web3Subscriptions` object on the window object.
 
 ```js
 // in node.js
-var Web3Subscriptions = require('web3-core-subscriptions');
+var Web3Subscriptions = require('wan3-core-subscriptions');
 
 var sub = new Web3Subscriptions({
     name: 'subscribe',

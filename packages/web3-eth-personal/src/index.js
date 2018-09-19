@@ -22,12 +22,12 @@
 
 "use strict";
 
-var core = require('web3-core');
-var Method = require('web3-core-method');
-var utils = require('web3-utils');
-var Net = require('web3-net');
+var core = require('wan3-core');
+var Method = require('wan3-core-method');
+var utils = require('wan3-utils');
+var Net = require('wan3-net');
 
-var formatters = require('web3-core-helpers').formatters;
+var formatters = require('wan3-core-helpers').formatters;
 
 
 var Personal = function Personal() {

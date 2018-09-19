@@ -6,13 +6,13 @@ var web3 = new Web3();
 
 var tests = [
     {
-        address: '0xEB014f8c8B418Db6b45774c326A0E64C78914dC0',
+        address: '0xeb014F8C8b418dB6B45774C326a0e64c78914Dc0',
         privateKey: '0xbe6383dad004f233317e46ddb46ad31b16064d14447a95cc1d8c8d4bc61c3728',
         data: 'Some data',
         // signature done with personal_sign
         signature: '0xa8037a6116c176a25e6fc224947fde9e79a2deaa0dd8b67b366fbdfdbffc01f953e41351267b20d4a89ebfe9c8f03c04de9b345add4a52f15bd026b63c8fb1501b'
     }, {
-        address: '0xEB014f8c8B418Db6b45774c326A0E64C78914dC0',
+        address: '0xeb014F8C8b418dB6B45774C326a0e64c78914Dc0',
         privateKey: '0xbe6383dad004f233317e46ddb46ad31b16064d14447a95cc1d8c8d4bc61c3728',
         data: 'Some data!%$$%&@*',
         // signature done with personal_sign

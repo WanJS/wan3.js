@@ -22,11 +22,11 @@
 
 "use strict";
 
-var core = require('web3-core');
-var Subscriptions = require('web3-core-subscriptions').subscriptions;
-var Method = require('web3-core-method');
-// var formatters = require('web3-core-helpers').formatters;
-var Net = require('web3-net');
+var core = require('wan3-core');
+var Subscriptions = require('wan3-core-subscriptions').subscriptions;
+var Method = require('wan3-core-method');
+// var formatters = require('wan3-core-helpers').formatters;
+var Net = require('wan3-net');
 
 
 var Shh = function Shh() {

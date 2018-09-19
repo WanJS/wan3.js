@@ -17,7 +17,7 @@ npm install web3-core-helpers
 
 ```js
 // in node.js
-var helpers = require('web3-core-helpers');
+var helpers = require('wan3-core-helpers');
 
 helpers.formatters;
 helpers.errors;

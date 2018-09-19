@@ -44,7 +44,7 @@ var tests = [{
         gasUsed: 231000,
         hash: "0x950427f707bf395fda0092d4f5dcbcf32d632106fb08e397124d0726082693e6",
         logsBloom: "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-        miner: "0xf8b483DbA2c3B7176a3Da549ad41A48BB3121069", // checksum address
+        miner: "0xF8B483dBa2C3b7176A3dA549AD41a48bb3121069", // checksum address
         nonce: "0x084149998194cc5f",
         number: 1263817,
         parentHash: "0x7736fab79e05dc611604d22470dadad26f56fe494421b5b333de816ce1f25701",
@@ -112,7 +112,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdf',
         transactionIndex: 1,
-        address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe', // checksum address
+        address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],
@@ -122,7 +122,7 @@ var tests = [{
 },
 {
     protocol: 'eth',
-    args: ['logs',{address: ['0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE','0xAaf4D0a3C12e86B4B5f39b213f7E19d048276daE']}],
+    args: ['logs',{address: ['0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae','0xaAF4d0A3c12E86b4b5F39B213F7e19D048276DAe']}],
     firstResult: '0x4444',
     firstPayload: {
         method: "eth_subscribe",
@@ -155,7 +155,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdf',
         transactionIndex: 1,
-        address: '0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE', // checksum address
+        address: '0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],
@@ -165,7 +165,7 @@ var tests = [{
 },
     {
         protocol: 'eth',
-        args: ['logs',{address: ['0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE','0xAaf4D0a3C12e86B4B5f39b213f7E19d048276daE']}],
+        args: ['logs',{address: ['0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae','0xaAF4d0A3c12E86b4b5F39B213F7e19D048276DAe']}],
         firstResult: '0x4444',
         firstPayload: {
             method: "eth_subscribe",
@@ -210,7 +210,7 @@ var tests = [{
             logIndex: 35,
             transactionHash: '0x2345fdfdf',
             transactionIndex: 1,
-            address: '0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE', // checksum address
+            address: '0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae', // checksum address
             topics: [
                 '0x0000000000000000000000000000000000000000000000000000000005656565'
             ],
@@ -223,7 +223,7 @@ var tests = [{
             logIndex: 35,
             transactionHash: '0x2345fdfdd',
             transactionIndex: 1,
-            address: '0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE', // checksum address
+            address: '0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae', // checksum address
             topics: [
                 '0x0000000000000000000000000000000000000000000000000000000005656565'
             ],
@@ -233,7 +233,7 @@ var tests = [{
     },
 {
     protocol: 'eth',
-    args: ['logs',{address: ['0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE','0xAaf4D0a3C12e86B4B5f39b213f7E19d048276daE']}],
+    args: ['logs',{address: ['0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae','0xaAF4d0A3c12E86b4b5F39B213F7e19D048276DAe']}],
     firstResult: '0x4444',
     firstPayload: {
         method: "eth_subscribe",
@@ -278,7 +278,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdf',
         transactionIndex: 1,
-        address: '0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE', // checksum address
+        address: '0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],
@@ -291,7 +291,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdd',
         transactionIndex: 1,
-        address: '0xDdf4d0A3c12e86b4B5f39B213f7E19d048276dAE', // checksum address
+        address: '0xdDF4D0a3C12E86B4b5F39b213F7e19D048276Dae', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],
@@ -301,7 +301,7 @@ var tests = [{
 },
 {
     protocol: 'eth',
-    args: ['logs',{address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe', topics: ['0x23']}], // checksum address
+    args: ['logs',{address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE', topics: ['0x23']}], // checksum address
     firstResult: '0x555',
     firstPayload: {
         method: "eth_subscribe",
@@ -335,7 +335,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdf',
         transactionIndex: 1,
-        address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe', // checksum address
+        address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],
@@ -396,7 +396,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdf',
         transactionIndex: 1,
-        address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe', // checksum address
+        address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],
@@ -410,7 +410,7 @@ var tests = [{
         logIndex: 35,
         transactionHash: '0x2345fdfdf',
         transactionIndex: 1,
-        address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe', // checksum address
+        address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE', // checksum address
         topics: [
             '0x0000000000000000000000000000000000000000000000000000000005656565'
         ],

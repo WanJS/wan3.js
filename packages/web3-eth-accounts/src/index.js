@@ -23,19 +23,19 @@
 "use strict";
 
 var _ = require("underscore");
-var core = require('web3-core');
-var Method = require('web3-core-method');
+var core = require('wan3-core');
+var Method = require('wan3-core-method');
 var Promise = require('any-promise');
-var Account = require("eth-lib/lib/account");
-var Hash = require("eth-lib/lib/hash");
-var RLP = require("eth-lib/lib/rlp");
-var Nat = require("eth-lib/lib/nat");
-var Bytes = require("eth-lib/lib/bytes");
+var Account = require("wan-lib/lib/account");
+var Hash = require("wan-lib/lib/hash");
+var RLP = require("wan-lib/lib/rlp");
+var Nat = require("wan-lib/lib/nat");
+var Bytes = require("wan-lib/lib/bytes");
 var cryp = (typeof global === 'undefined') ? require('crypto-browserify') : require('crypto');
 var scryptsy = require('scrypt.js');
 var uuid = require('uuid');
-var utils = require('web3-utils');
-var helpers = require('web3-core-helpers');
+var utils = require('wan3-utils');
+var helpers = require('wan3-core-helpers');
 
 var isNot = function(value) {
     return (_.isUndefined(value) || _.isNull(value));
@@ -169,8 +169,8 @@ Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, ca
             transaction.data = tx.data || '0x';
             transaction.value = tx.value || '0x';
             transaction.chainId = utils.numberToHex(tx.chainId);
-
             var rlpEncoded = RLP.encode([
+                Bytes.fromNat(transaction.Txtype),
                 Bytes.fromNat(transaction.nonce),
                 Bytes.fromNat(transaction.gasPrice),
                 Bytes.fromNat(transaction.gas),
@@ -186,20 +186,20 @@ Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, ca
 
             var signature = Account.makeSigner(Nat.toNumber(transaction.chainId || "0x1") * 2 + 35)(Hash.keccak256(rlpEncoded), privateKey);
 
-            var rawTx = RLP.decode(rlpEncoded).slice(0, 6).concat(Account.decodeSignature(signature));
+            var rawTx = RLP.decode(rlpEncoded).slice(0, 7).concat(Account.decodeSignature(signature));
 
-            rawTx[6] = makeEven(trimLeadingZero(rawTx[6]));
             rawTx[7] = makeEven(trimLeadingZero(rawTx[7]));
             rawTx[8] = makeEven(trimLeadingZero(rawTx[8]));
+            rawTx[9] = makeEven(trimLeadingZero(rawTx[9]));
 
             var rawTransaction = RLP.encode(rawTx);
 
             var values = RLP.decode(rawTransaction);
             result = {
                 messageHash: hash,
-                v: trimLeadingZero(values[6]),
-                r: trimLeadingZero(values[7]),
-                s: trimLeadingZero(values[8]),
+                v: trimLeadingZero(values[7]),
+                r: trimLeadingZero(values[8]),
+                s: trimLeadingZero(values[9]),
                 rawTransaction: rawTransaction
             };
 
@@ -217,7 +217,6 @@ Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, ca
         return Promise.resolve(signed(tx));
     }
 
-
     // Otherwise, get the missing info from the Ethereum Node
     return Promise.all([
         isNot(tx.chainId) ? _this._ethereumCall.getId() : tx.chainId,
@@ -234,10 +233,10 @@ Accounts.prototype.signTransaction = function signTransaction(tx, privateKey, ca
 /* jshint ignore:start */
 Accounts.prototype.recoverTransaction = function recoverTransaction(rawTx) {
     var values = RLP.decode(rawTx);
-    var signature = Account.encodeSignature(values.slice(6,9));
-    var recovery = Bytes.toNumber(values[6]);
+    var signature = Account.encodeSignature(values.slice(7,10));
+    var recovery = Bytes.toNumber(values[7]);
     var extraData = recovery < 35 ? [] : [Bytes.fromNumber((recovery - 35) >> 1), "0x", "0x"];
-    var signingData = values.slice(0,6).concat(extraData);
+    var signingData = values.slice(0,7).concat(extraData);
     var signingDataHex = RLP.encode(signingData);
     return Account.recover(Hash.keccak256(signingDataHex), signature);
 };

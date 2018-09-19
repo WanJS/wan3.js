@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>web3.eth.personal &#8212; web3.js 1.0.0 documentation</title>
-    
+
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -27,7 +27,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="web3.js 1.0.0 documentation" href="index.html" />
     <link rel="next" title="web3.eth.Iban" href="web3-eth-iban.html" />
-    <link rel="prev" title="web3.eth.accounts" href="web3-eth-accounts.html" /> 
+    <link rel="prev" title="web3.eth.accounts" href="web3-eth-accounts.html" />
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -42,15 +42,15 @@
         <li class="right" >
           <a href="web3-eth-accounts.html" title="web3.eth.accounts"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li>
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
-            
+
   <div class="admonition note" id="eth-personal">
 <p class="first admonition-title">Note</p>
 <p class="last">This documentation is work in progress and web3.js 1.0 is not yet released! You can find the current documentation for web3 0.x.x at <a class="reference external" href="https://github.com/ethereum/wiki/wiki/JavaScript-API">github.com/ethereum/wiki/wiki/JavaScript-API</a>.</p>
@@ -383,12 +383,12 @@ Will return the given provider by the (browser) environment, otherwise <code cla
 </div>
 <div class="section" id="id17">
 <h3>Example<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">personal</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span> <span class="s2">&quot;test password!&quot;</span><span class="p">)</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">personal</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span> <span class="s2">&quot;test password!&quot;</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
 <span class="o">&gt;</span> <span class="s2">&quot;0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400&quot;</span>
 
 <span class="c1">// the below is the same</span>
-<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">personal</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">utf8ToHex</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">),</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span> <span class="s2">&quot;test password!&quot;</span><span class="p">)</span>
+<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">personal</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">utf8ToHex</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">),</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span> <span class="s2">&quot;test password!&quot;</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
 <span class="o">&gt;</span> <span class="s2">&quot;0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400&quot;</span>
 </pre></div>
@@ -417,7 +417,7 @@ Will return the given provider by the (browser) environment, otherwise <code cla
 <div class="section" id="id20">
 <h3>Example<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">personal</span><span class="p">.</span><span class="nx">ecRecover</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400&quot;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
-<span class="o">&gt;</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span>
+<span class="o">&gt;</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span>
 </pre></div>
 </div>
 <hr class="docutils" />
@@ -530,7 +530,7 @@ Will return the given provider by the (browser) environment, otherwise <code cla
         <li class="right" >
           <a href="web3-eth-accounts.html" title="web3.eth.accounts"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li>
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -31,7 +31,7 @@ var formattedBlockResult = {
     "logsBloom": "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331",
     "transactionsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
     "stateRoot": "0xd5855eb08b3387c0af375e9cdb6acfc05eb8f519e419b874b6ff2ffda7ed1dff",
-    "miner": "0x4E65FDa2159562a496F9f3522f89122A3088497a", // checksum address
+    "miner": "0x4e65fdA2159562A496f9F3522F89122a3088497A", // checksum address
     "difficulty": '163591',
     "totalDifficulty":  '163591',
     "size":  163591,
@@ -84,7 +84,7 @@ var formattedBlockResultWithTx = {
     "logsBloom": "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331",
     "transactionsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
     "stateRoot": "0xd5855eb08b3387c0af375e9cdb6acfc05eb8f519e419b874b6ff2ffda7ed1dff",
-    "miner": "0x4E65FDa2159562a496F9f3522f89122A3088497a", // checksum address
+    "miner": "0x4e65fdA2159562A496f9F3522F89122a3088497A", // checksum address
     "difficulty": '163591',
     "totalDifficulty":  '163591',
     "size":  163591,
@@ -99,8 +99,8 @@ var formattedBlockResultWithTx = {
         "blockHash": "0x6fd9e2a26ab",
         "blockNumber": 5599,
         "transactionIndex":  1,
-        "from":"0x407D73d8a49eeb85D32Cf465507dd71d507100c1", // checksum address
-        "to":"0x85F43D8a49eeB85d32Cf465507DD71d507100C1d", // checksum address
+        "from":"0x407d73D8A49EEB85d32cF465507DD71D507100C1", // checksum address
+        "to":"0x85f43d8A49EEb85D32cF465507dd71D507100c1D", // checksum address
         "value": '520464',
         "gas": 520464,
         "gasPrice": '10000000000000',
@@ -110,7 +110,7 @@ var formattedBlockResultWithTx = {
 };
 
 var tests = [{
-    args: ['0x47D33b27Bb249a2DBab4C0612BF9CaF4C1950855', 2],
+    args: ['0x47d33B27bB249A2dbAB4c0612bf9cAf4c1950855', 2],
     formattedArgs: ['0x47d33b27bb249a2dbab4c0612bf9caf4c1950855', '0x2'],
     result: blockResult,
     formattedResult: formattedBlockResult,

@@ -18,7 +18,7 @@ npm install web3-core
 
 ```js
 // in node.js
-var core = require('web3-core');
+var core = require('wan3-core');
 
 var CoolLib = function CoolLib() {
 

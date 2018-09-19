@@ -186,7 +186,7 @@ var abi = [{
     "stateMutability":"view"
     }];
 
-var address = '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe';
+var address = '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE';
 var addressLowercase = '0x11f4d0a3c12e86b4b5f39b213f7e19d048276dae';
 var address2 = '0x5555567890123456789012345678901234567891';
 
@@ -245,7 +245,7 @@ var getEthContractInstance = function(abi, address, options, provider) {
 }
 
 var account = {
-    address: '0xEB014f8c8B418Db6b45774c326A0E64C78914dC0',
+    address: '0xeb014F8C8b418dB6B45774C326a0e64c78914Dc0',
     privateKey: '0xbe6383dad004f233317e46ddb46ad31b16064d14447a95cc1d8c8d4bc61c3728',
 };
 
@@ -255,7 +255,6 @@ var runTests = function(contractFactory) {
             var provider = new FakeIpcProvider();
 
             var contract = contractFactory(abi, address, provider);
-
             assert.equal(contract.options.address, address);
         });
         it('should transform address to checksum address', function () {
@@ -286,7 +285,7 @@ var runTests = function(contractFactory) {
         it('.clone() should properly clone the contract instance', function () {
             var provider = new FakeIpcProvider();
 
-            var fromAddress = '0xDDfFD0A3C12e86b4b5f39B213f7e19d048276daE';
+            var fromAddress = '0xddFfd0a3c12E86B4B5F39b213F7E19D048276DAe';
             var abi2 = [{
                 "name": "ballerRo",
                 "type": "function",
@@ -1643,7 +1642,7 @@ var runTests = function(contractFactory) {
                 contract.methods.getStr().call()
             ).spread(function(m1, m2, m3) {
                 assert.deepEqual(m1, '10');
-                assert.deepEqual(m2, '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe');
+                assert.deepEqual(m2, '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE');
                 assert.deepEqual(m3, 'Hello!%!');
 
                 done();
@@ -1829,7 +1828,7 @@ var runTests = function(contractFactory) {
                             }
                         },
                         Changed: {
-                            address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                            address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                             blockNumber: 10,
                             transactionHash: '0x1234',
                             blockHash: '0x1345',
@@ -1837,11 +1836,11 @@ var runTests = function(contractFactory) {
                             id: 'log_9ff24cb4',
                             transactionIndex: 0,
                             returnValues: {
-                                0: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                0: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                 1: '1',
                                 2: '1',
                                 3: '8',
-                                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                 amount: '1',
                                 t1: '1',
                                 t2: '8'
@@ -1968,7 +1967,7 @@ var runTests = function(contractFactory) {
                         events: {
                             Changed: [
                                 {
-                                    address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                    address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                     blockNumber: 10,
                                     transactionHash: '0x1234',
                                     blockHash: '0x1345',
@@ -1976,11 +1975,11 @@ var runTests = function(contractFactory) {
                                     id: 'log_9ff24cb4',
                                     transactionIndex: 0,
                                     returnValues: {
-                                        0: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                        0: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                         1: '1',
                                         2: '1',
                                         3: '8',
-                                        from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                        from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                         amount: '1',
                                         t1: '1',
                                         t2: '8'
@@ -1994,7 +1993,7 @@ var runTests = function(contractFactory) {
                                         data: '0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000008',
                                     }
                                 }, {
-                                    address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                    address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                     blockNumber: 10,
                                     transactionHash: '0x1234',
                                     blockHash: '0x1345',
@@ -2002,11 +2001,11 @@ var runTests = function(contractFactory) {
                                     id: 'log_8b8a2b7f',
                                     transactionIndex: 0,
                                     returnValues: {
-                                        0: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                        0: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                         1: '2',
                                         2: '1',
                                         3: '8',
-                                        from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                        from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                         amount: '2',
                                         t1: '1',
                                         t2: '8'
@@ -2144,7 +2143,7 @@ var runTests = function(contractFactory) {
                                 }
                             },
                             Changed: {
-                                address: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                address: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                 blockNumber: 10,
                                 transactionHash: '0x1234',
                                 blockHash: '0x1345',
@@ -2152,11 +2151,11 @@ var runTests = function(contractFactory) {
                                 id: 'log_9ff24cb4',
                                 transactionIndex: 0,
                                 returnValues: {
-                                    0: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                    0: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                     1: '1',
                                     2: '1',
                                     3: '8',
-                                    from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                                    from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                                     amount: '1',
                                     t1: '1',
                                     t2: '8'
@@ -2843,7 +2842,7 @@ var runTests = function(contractFactory) {
 
             var contract = contractFactory(abi, address, provider);
 
-            contract.methods.listOfNestedStructs('0x9CC9a2c777605Af16872E0997b3Aeb91d96D5D8c').call().then(function(result) {
+            contract.methods.listOfNestedStructs('0x9cc9A2C777605aF16872e0997B3aEB91D96d5d8C').call().then(function(result) {
                 var expectedArray = [];
                 expectedArray[0] = true;
                 expectedArray['status'] = true;
@@ -3029,6 +3028,7 @@ describe('typical usage', function() {
                 gas: '0xc350',
                 gasPrice: '0xbb8',
                 chainId: '0x1',
+                Txtype: '0x1',
                 nonce: '0x1',
             }).then(function (tx) {
                 const expected = tx.rawTransaction;
@@ -3084,6 +3084,7 @@ describe('typical usage', function() {
             data: '0x1234567',
             arguments: [account.address, 200]
         }).send({
+            Txtype: '0x1',
             from: account.address,
             gas: 50000,
             gasPrice: 3000,

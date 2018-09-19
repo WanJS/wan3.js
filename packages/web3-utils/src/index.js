@@ -294,7 +294,7 @@ var toChecksumAddress = function (address) {
 
     for (var i = 0; i < address.length; i++ ) {
         // If ith character is 9 to f then make it uppercase
-        if (parseInt(addressHash[i], 16) > 7) {
+        if (parseInt(addressHash[i], 16) <= 7) {
             checksumAddress += address[i].toUpperCase();
         } else {
             checksumAddress += address[i];

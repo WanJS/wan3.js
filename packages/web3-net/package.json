@@ -1,14 +1,14 @@
 {
-    "name": "web3-net",
-    "namespace": "ethereum",
-    "version": "1.0.0-beta.36",
+    "name": "wan3-net",
+    "namespace": "wanchain",
+    "version": "1.0.0-beta.37",
     "description": "Web3 module to interact with the Ethereum nodes networking properties.",
-    "repository": "https://github.com/ethereum/web3.js/tree/master/packages/web3-net",
+    "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-net",
     "license": "LGPL-3.0",
     "main": "src/index.js",
     "dependencies": {
-        "web3-core": "1.0.0-beta.36",
-        "web3-core-method": "1.0.0-beta.36",
-        "web3-utils": "1.0.0-beta.36"
+        "wan3-core": "1.0.0-beta.37",
+        "wan3-core-method": "1.0.0-beta.37",
+        "wan3-utils": "1.0.0-beta.37"
     }
 }

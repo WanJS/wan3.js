@@ -4,14 +4,14 @@ var utils = require('../packages/web3-utils');
 var assert = chai.assert;
 
 var tests = [
-    { value: '0x52908400098527886E0F7030069857D2E4169EE7', is: true },
-    { value: '0x8617E340B3D01FA5F11F306F4090FD50E238070D', is: true },
-    { value: '0xde709f2102306220921060314715629080e2fb77', is: true },
-    { value: '0x27b1fdb04752bbc536007a920d24acb045561c26', is: true },
-    { value: '0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', is: true },
-    { value: '0xfB6916095ca1df60bB79Ce92cE3Ea74c37c5d359', is: true },
-    { value: '0xdbF03B407c01E7cD3CBea99509d93f8DDDC8C6FB', is: true },
-    { value: '0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', is: true },
+    { value: '0x52908400098527886e0f7030069857d2e4169ee7', is: true },
+    { value: '0x8617e340b3d01fa5f11f306f4090fd50e238070d', is: true },
+    { value: '0xDE709F2102306220921060314715629080E2FB77', is: true },
+    { value: '0x27B1FDB04752BBC536007A920D24ACB045561C26', is: true },
+    { value: '0x5AaEB6053f3e94c9B9a09F33669435e7eF1bEaED', is: true },
+    { value: '0xFb6916095CA1DF60Bb79cE92Ce3eA74C37C5D359', is: true },
+    { value: '0xDBf03b407C01e7Cd3cbEA99509D93F8dddc8c6fb', is: true },
+    { value: '0xd1220a0CF47C7b9bE7a2e6ba89f429762E7B9AdB', is: true },
     { value: '0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', is: false },
     { value: '0xd1220a0cf47c7b9be7a2e6ba89f429762e7b9adb', is: false }
 ];

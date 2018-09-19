@@ -112,12 +112,12 @@ Example
 
 .. code-block:: javascript
 
-    web3.eth.personal.sign("Hello world", "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "test password!")
+    web3.eth.personal.sign("Hello world", "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE", "test password!")
     .then(console.log);
     > "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
 
     // the below is the same
-    web3.eth.personal.sign(web3.utils.utf8ToHex("Hello world"), "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "test password!")
+    web3.eth.personal.sign(web3.utils.utf8ToHex("Hello world"), "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE", "test password!")
     .then(console.log);
     > "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400"
 
@@ -160,7 +160,7 @@ Example
 .. code-block:: javascript
 
     web3.eth.personal.ecRecover("Hello world", "0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400").then(console.log);
-    > "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe"
+    > "0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE"
 
 ------------------------------------------------------------------------------
 

@@ -23,19 +23,19 @@
 "use strict";
 
 var _ = require('underscore');
-var core = require('web3-core');
-var helpers = require('web3-core-helpers');
-var Subscriptions = require('web3-core-subscriptions').subscriptions;
-var Method = require('web3-core-method');
-var utils = require('web3-utils');
-var Net = require('web3-net');
+var core = require('wan3-core');
+var helpers = require('wan3-core-helpers');
+var Subscriptions = require('wan3-core-subscriptions').subscriptions;
+var Method = require('wan3-core-method');
+var utils = require('wan3-utils');
+var Net = require('wan3-net');
 
-var ENS = require('web3-eth-ens');
-var Personal = require('web3-eth-personal');
-var BaseContract = require('web3-eth-contract');
-var Iban = require('web3-eth-iban');
-var Accounts = require('web3-eth-accounts');
-var abi = require('web3-eth-abi');
+var ENS = require('wan3-eth-ens');
+var Personal = require('wan3-eth-personal');
+var BaseContract = require('wan3-eth-contract');
+var Iban = require('wan3-eth-iban');
+var Accounts = require('wan3-eth-accounts');
+var abi = require('wan3-eth-abi');
 
 var getNetworkType = require('./getNetworkType.js');
 var formatter = helpers.formatters;

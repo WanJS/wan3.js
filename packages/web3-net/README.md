@@ -29,7 +29,7 @@ This will expose the `Web3Net` object on the window object.
 
 ```js
 // in node.js
-var Web3Net = require('web3-net');
+var Web3Net = require('wan3-net');
 
 var net = new Web3Net('ws://localhost:8546');
 ```

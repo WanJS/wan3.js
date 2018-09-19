@@ -29,7 +29,7 @@ This will expose the `Web3EthContract` object on the window object.
 
 ```js
 // in node.js
-var Web3EthContract = require('web3-eth-contract');
+var Web3EthContract = require('wan3-eth-contract');
 
 // set provider for all later instances to use
 Web3EthContract.setProvider('ws://localhost:8546');

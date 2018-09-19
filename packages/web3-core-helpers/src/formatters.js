@@ -25,8 +25,8 @@
 
 
 var _ = require('underscore');
-var utils = require('web3-utils');
-var Iban = require('web3-eth-iban');
+var utils = require('wan3-utils');
+var Iban = require('wan3-eth-iban');
 
 /**
  * Should the format output to a big number
@@ -93,7 +93,7 @@ var _txInputFormatter = function (options){
         options.gas = options.gas || options.gasLimit;
     }
 
-    ['gasPrice', 'gas', 'value', 'nonce'].filter(function (key) {
+    ['Txtype', 'gasPrice', 'gas', 'value', 'nonce'].filter(function (key) {
         return options[key] !== undefined;
     }).forEach(function(key){
         options[key] = utils.numberToHex(options[key]);

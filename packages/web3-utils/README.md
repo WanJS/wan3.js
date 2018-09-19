@@ -29,7 +29,7 @@ This will expose the `Web3Utils` object on the window object.
 
 ```js
 // in node.js
-var Web3Utils = require('web3-utils');
+var Web3Utils = require('wan3-utils');
 console.log(Web3Utils);
 {
     sha3: function(){},

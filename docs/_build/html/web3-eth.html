@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>web3.eth &#8212; web3.js 1.0.0 documentation</title>
-    
+
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
+
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -27,7 +27,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="web3.js 1.0.0 documentation" href="index.html" />
     <link rel="next" title="web3.eth.subscribe" href="web3-eth-subscribe.html" />
-    <link rel="prev" title="web3" href="web3.html" /> 
+    <link rel="prev" title="web3" href="web3.html" />
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -42,15 +42,15 @@
         <li class="right" >
           <a href="web3.html" title="web3"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li>
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
-            
+
   <div class="admonition note" id="eth">
 <p class="first admonition-title">Note</p>
 <p class="last">This documentation is work in progress and web3.js 1.0 is not yet released! You can find the current documentation for web3 0.x.x at <a class="reference external" href="https://github.com/ethereum/wiki/wiki/JavaScript-API">github.com/ethereum/wiki/wiki/JavaScript-API</a>.</p>
@@ -82,7 +82,7 @@ If you want to circumvent the checksum check you can make an address all lower- 
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getAccounts</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
-<span class="o">&gt;</span> <span class="p">[</span><span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span> <span class="p">,</span><span class="s2">&quot;0x85F43D8a49eeB85d32Cf465507DD71d507100C1d&quot;</span><span class="p">]</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span> <span class="p">,</span><span class="s2">&quot;0x85F43D8a49eeB85d32Cf465507DD71d507100C1d&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -396,7 +396,7 @@ Will return the given provider by the (browser) environment, otherwise <code cla
 <span class="o">&gt;</span> <span class="kc">undefined</span>
 
 <span class="c1">// set the default account</span>
-<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">defaultAccount</span> <span class="o">=</span> <span class="s1">&#39;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&#39;</span><span class="p">;</span>
+<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">defaultAccount</span> <span class="o">=</span> <span class="s1">&#39;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&#39;</span><span class="p">;</span>
 </pre></div>
 </div>
 <hr class="docutils" />
@@ -510,7 +510,7 @@ The default value is &#8220;latest&#8221;.</p>
 <h3>Example<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getCoinbase</span><span class="p">()</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
-<span class="o">&gt;</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span>
+<span class="o">&gt;</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -592,7 +592,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 <h3>Example<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getAccounts</span><span class="p">()</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
-<span class="o">&gt;</span> <span class="p">[</span><span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span> <span class="s2">&quot;0xDCc6960376d6C6dEa93647383FfB245CfCed97Cf&quot;</span><span class="p">]</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span> <span class="s2">&quot;0xDCc6960376d6C6dEa93647383FfB245CfCed97Cf&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -964,7 +964,7 @@ The gas price is determined by the last few blocks median gas price.</p>
   <span class="s2">&quot;transactionIndex&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
   <span class="s2">&quot;blockHash&quot;</span><span class="o">:</span> <span class="s2">&quot;0xef95f2f1ed3ca60b048b4bf67cde2195961e0bba6f70bcbea9a2c4e133e34b46&quot;</span><span class="p">,</span>
   <span class="s2">&quot;blockNumber&quot;</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
-  <span class="s2">&quot;contractAddress&quot;</span><span class="o">:</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;contractAddress&quot;</span><span class="o">:</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span>
   <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="o">:</span> <span class="mi">314159</span><span class="p">,</span>
   <span class="s2">&quot;gasUsed&quot;</span><span class="o">:</span> <span class="mi">30234</span><span class="p">,</span>
   <span class="s2">&quot;logs&quot;</span><span class="o">:</span> <span class="p">[{</span>
@@ -996,7 +996,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 </div>
 <div class="section" id="id61">
 <h3>Example<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getTransactionCount</span><span class="p">(</span><span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">)</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getTransactionCount</span><span class="p">(</span><span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
 <span class="o">&gt;</span> <span class="mi">1</span>
 </pre></div>
@@ -1062,7 +1062,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 <span class="c1">// using the promise</span>
 <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sendTransaction</span><span class="p">({</span>
     <span class="nx">from</span><span class="o">:</span> <span class="s1">&#39;0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe&#39;</span><span class="p">,</span>
-    <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&#39;</span><span class="p">,</span>
+    <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&#39;</span><span class="p">,</span>
     <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;1000000000000000&#39;</span>
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">receipt</span><span class="p">){</span>
@@ -1073,7 +1073,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 <span class="c1">// using the event emitter</span>
 <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sendTransaction</span><span class="p">({</span>
     <span class="nx">from</span><span class="o">:</span> <span class="s1">&#39;0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe&#39;</span><span class="p">,</span>
-    <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&#39;</span><span class="p">,</span>
+    <span class="nx">to</span><span class="o">:</span> <span class="s1">&#39;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&#39;</span><span class="p">,</span>
     <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;1000000000000000&#39;</span>
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;transactionHash&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">hash</span><span class="p">){</span>
@@ -1162,12 +1162,12 @@ The gas price is determined by the last few blocks median gas price.</p>
 </div>
 <div class="section" id="id70">
 <h3>Example<a class="headerlink" href="#id70" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">)</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
 <span class="o">&gt;</span> <span class="s2">&quot;0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400&quot;</span>
 
 <span class="c1">// the below is the same</span>
-<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">utf8ToHex</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">),</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">)</span>
+<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">utf8ToHex</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">),</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">)</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
 <span class="o">&gt;</span> <span class="s2">&quot;0x30755ed65396facf86c53e6217c52b4daebe72aa4941d89635409de4c9c7f9466d4e9aaec7977f05e923889b33c0d0dd27d7226b6e6f56ce737465c5cfd04be400&quot;</span>
 </pre></div>
@@ -1244,7 +1244,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 <div class="section" id="id76">
 <h3>Example<a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">call</span><span class="p">({</span>
-    <span class="nx">to</span><span class="o">:</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span> <span class="c1">// contract address</span>
+    <span class="nx">to</span><span class="o">:</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span> <span class="c1">// contract address</span>
     <span class="nx">data</span><span class="o">:</span> <span class="s2">&quot;0xc6888fa10000000000000000000000000000000000000000000000000000000000000003&quot;</span>
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
@@ -1274,7 +1274,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 <div class="section" id="id79">
 <h3>Example<a class="headerlink" href="#id79" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">estimateGas</span><span class="p">({</span>
-    <span class="nx">to</span><span class="o">:</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span>
+    <span class="nx">to</span><span class="o">:</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span>
     <span class="nx">data</span><span class="o">:</span> <span class="s2">&quot;0xc6888fa10000000000000000000000000000000000000000000000000000000000000003&quot;</span>
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
@@ -1322,7 +1322,7 @@ The gas price is determined by the last few blocks median gas price.</p>
 <div class="section" id="id82">
 <h3>Example<a class="headerlink" href="#id82" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getPastLogs</span><span class="p">({</span>
-    <span class="nx">address</span><span class="o">:</span> <span class="s2">&quot;0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe&quot;</span><span class="p">,</span>
+    <span class="nx">address</span><span class="o">:</span> <span class="s2">&quot;0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE&quot;</span><span class="p">,</span>
     <span class="nx">topics</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234&quot;</span><span class="p">]</span>
 <span class="p">})</span>
 <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">);</span>
@@ -1848,7 +1848,7 @@ The gas price is determined by the last few blocks median gas price.</p>
         <li class="right" >
           <a href="web3.html" title="web3"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">web3.js 1.0.0 documentation</a> &#187;</li>
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -1,5 +1,5 @@
 var Accounts = require("./../packages/web3-eth-accounts/src/index.js");
-var ethereumWallet = require('ethereumjs-wallet');
+var ethereumWallet = require('wanchainjs-wallet');
 var chai = require('chai');
 var assert = chai.assert;
 var Web3 = require('../packages/web3');
@@ -113,13 +113,13 @@ describe("eth", function () {
     describe("accounts", function () {
 
         tests.forEach(function (test, i) {
-            it("encrypt eth.account, and compare to ethereumjs-wallet", function() {
+            it("encrypt eth.account, and compare to wanchainjs-wallet", function() {
                 var ethAccounts = new Accounts();
 
                 // create account
                 var acc = ethAccounts.create();
 
-                // create ethereumjs-wallet account
+                // create wanchainjs-wallet account
                 var ethWall = ethereumWallet.fromPrivateKey(new Buffer(acc.privateKey.replace('0x',''),'hex'));
 
                 // compare addresses
@@ -128,14 +128,14 @@ describe("eth", function () {
                 assert.deepEqual(acc.encrypt(pw, {n: n,salt: salt, iv: iv, uuid: uuid}), ethWall.toV3(pw, {n: n, salt: salt, iv: iv, uuid: uuid}));
             });
 
-            it("encrypt eth.account, and decrypt with ethereumjs-wallet", function() {
+            it("encrypt eth.account, and decrypt with wanchainjs-wallet", function() {
                 var ethAccounts = new Accounts();
 
                 // create account
                 var acc = ethAccounts.create();
                 var encrypt = acc.encrypt(pw, {n: n});
 
-                // create ethereumjs-wallet account
+                // create wanchainjs-wallet account
                 var ethWall = ethereumWallet.fromV3(encrypt, pw);
 
                 // compare addresses
@@ -143,14 +143,14 @@ describe("eth", function () {
 
             });
 
-            it("encrypt ethereumjs-wallet, and decrypt with eth.account", function() {
+            it("encrypt wanchainjs-wallet, and decrypt with eth.account", function() {
                 var ethAccounts = new Accounts();
 
                 // create account
                 var ethWall = ethereumWallet.generate();
                 var encrypt = ethWall.toV3(pw, {n: n});
 
-                // create ethereumjs-wallet account
+                // create wanchainjs-wallet account
                 var acc = ethAccounts.decrypt(encrypt, pw);
 
                 // compare addresses
@@ -158,7 +158,7 @@ describe("eth", function () {
 
             });
 
-            it("decrypt static signature using ethereumjs-wallet and eth.account and compare", function() {
+            it("decrypt static signature using wanchainjs-wallet and eth.account and compare", function() {
                 var ethAccounts = new Accounts();
 
                 var encrypt = { version: 3,

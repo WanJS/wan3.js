@@ -21,9 +21,9 @@
 "use strict";
 
 var _ = require('underscore');
-var Contract = require('web3-eth-contract');
-var namehash = require('eth-ens-namehash');
-var PromiEvent = require('web3-core-promievent');
+var Contract = require('wan3-eth-contract');
+var namehash = require('wan-wns-namehash');
+var PromiEvent = require('wan3-core-promievent');
 var REGISTRY_ABI = require('../ressources/ABI/Registry');
 var RESOLVER_ABI = require('../ressources/ABI/Resolver');
 

@@ -36,8 +36,8 @@ describe('lib/web3/method', function () {
             provider.injectResult('0x1234567453543456321456321'); // tx hash
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456'
             }).then(function (result) {
 
@@ -77,8 +77,8 @@ describe('lib/web3/method', function () {
 
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456'
             })
             .catch(function (error) {
@@ -121,8 +121,8 @@ describe('lib/web3/method', function () {
             provider.injectResult('0x1234567453543456321456321'); // tx hash
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456'
             }, function (err, result) {
 
@@ -163,8 +163,8 @@ describe('lib/web3/method', function () {
             provider.injectResult('0x1234567453543456321456321'); // tx hash
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456'
             }, function (err, result) {
 
@@ -212,8 +212,8 @@ describe('lib/web3/method', function () {
             provider.injectResult('0x1234567453543456321456321'); // tx hash
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456'
             });
 
@@ -295,8 +295,8 @@ describe('lib/web3/method', function () {
             var send = succeedOnReceipt();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 value: '0xa',
                 gasPrice: '23435234234'
             }).then(function (result) {
@@ -320,8 +320,8 @@ describe('lib/web3/method', function () {
             var send = succeedOnReceipt();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 value: '0xa',
                 gasPrice: '23435234234'
             }).on('receipt', function (result) {
@@ -417,7 +417,7 @@ describe('lib/web3/method', function () {
             var send = succeedwhenDeploying();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).then(function (result) {
@@ -441,7 +441,7 @@ describe('lib/web3/method', function () {
             var send = succeedwhenDeploying();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).on('receipt', function (result) {
@@ -535,7 +535,7 @@ describe('lib/web3/method', function () {
             var send = failOnCodeEmpty();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).catch(function (error) {
@@ -550,7 +550,7 @@ describe('lib/web3/method', function () {
             var send = failOnCodeEmpty();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).on('error', function (error) {
@@ -634,7 +634,7 @@ describe('lib/web3/method', function () {
             var send = failOnMissingAddress();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).catch(function (error) {
@@ -647,7 +647,7 @@ describe('lib/web3/method', function () {
             var send = failOnMissingAddress();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).on('error', function (error) {
@@ -727,7 +727,7 @@ describe('lib/web3/method', function () {
             var send = failOnTimeout();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).catch(function (error) {
@@ -739,7 +739,7 @@ describe('lib/web3/method', function () {
             var send = failOnTimeout();
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 data: '0xa123456',
                 gasPrice: '23435234234'
             }).on('error', function (error) {
@@ -820,8 +820,8 @@ describe('lib/web3/method', function () {
             var countConf = 0;
 
             send({
-                from: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
-                to: '0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe',
+                from: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
+                to: '0x11F4D0a3C12E86b4B5f39b213f7e19d048276daE',
                 gasPrice: '23435234234'
             })
             .on('transactionHash', function(result){

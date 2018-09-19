@@ -20,8 +20,8 @@
 
 "use strict";
 
-var PromiEvent = require('web3-core-promievent');
-var namehash = require('eth-ens-namehash');
+var PromiEvent = require('wan3-core-promievent');
+var namehash = require('wan-wns-namehash');
 var _ = require('underscore');
 
 /**

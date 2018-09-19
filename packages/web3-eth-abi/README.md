@@ -29,7 +29,7 @@ This will expose the `Web3EthAbi` object on the window object.
 
 ```js
 // in node.js
-var Web3EthAbi = require('web3-eth-abi');
+var Web3EthAbi = require('wan3-eth-abi');
 
 Web3EthAbi.encodeFunctionSignature('myMethod(uint256,string)');
 > '0x24ee0097'

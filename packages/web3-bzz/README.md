@@ -29,7 +29,7 @@ This will expose the `Web3Personal` object on the window object.
 
 ```js
 // in node.js
-var Web3Bzz = require('web3-bzz');
+var Web3Bzz = require('wan3-bzz');
 
 var bzz = new Web3Bzz('http://swarm-gateways.net');
 ```

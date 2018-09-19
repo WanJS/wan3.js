@@ -36,7 +36,7 @@ var tests = [{
     formattedResult: '203137',
     call: 'eth_'+ method
 }, {
-    args: ['0xdbdbdB2cBD23b783741e8d7fcF51e459b497e4a6', 0x1], // checksum address
+    args: ['0xDBDBDb2Cbd23B783741E8D7FCf51E459B497E4A6', 0x1], // checksum address
     formattedArgs: ['0xdbdbdb2cbd23b783741e8d7fcf51e459b497e4a6', '0x1'],
     result: '0x31981',
     formattedResult: '203137',

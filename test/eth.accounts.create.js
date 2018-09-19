@@ -1,5 +1,5 @@
 var Accounts = require("./../packages/web3-eth-accounts");
-var ethereumWallet = require('ethereumjs-wallet');
+var ethereumWallet = require('wanchainjs-wallet');
 var chai = require('chai');
 var assert = chai.assert;
 var Web3 = require('../packages/web3');
@@ -15,13 +15,13 @@ describe("eth", function () {
     describe("accounts", function () {
 
         tests.forEach(function (test, i) {
-            it("create eth.account, and compare to ethereumjs-wallet", function() {
+            it("create eth.account, and compare to wanchainjs-wallet", function() {
                 var ethAccounts = new Accounts();
 
                 // create account
                 var acc = ethAccounts.create();
 
-                // create ethereumjs-wallet account
+                // create wanchainjs-wallet account
                 var ethWall = ethereumWallet.fromPrivateKey(new Buffer(acc.privateKey.replace('0x',''),'hex'));
 
                 // compare addresses

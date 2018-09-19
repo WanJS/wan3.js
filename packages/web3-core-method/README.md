@@ -29,7 +29,7 @@ This will expose the `Web3Method` object on the window object.
 
 ```js
 // in node.js
-var Web3Method = require('web3-core-method');
+var Web3Method = require('wan3-core-method');
 
 var method = new Web3Method({
     name: 'sendTransaction',

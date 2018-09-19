@@ -29,7 +29,7 @@ This will expose the `Web3IpcProvider` object on the window object.
 
 ```js
 // in node.js
-var Web3IpcProvider = require('web3-providers-ipc');
+var Web3IpcProvider = require('wan3-providers-ipc');
 var net = require(net);
 
 var ipc = new Web3IpcProvider('/Users/me/Library/Ethereum/geth.ipc', net);

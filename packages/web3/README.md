@@ -1,4 +1,4 @@
-# web3
+# wan3
 
 This is a main package of [web3.js](https://github.com/ethereum/web3.js)
 

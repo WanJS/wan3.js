@@ -5,8 +5,8 @@ var method = 'sendTransaction';
 
 var tests = [{
     args: [{
-        from: '0xdbdbdB2cBD23b783741e8d7fcF51e459b497e4a6', // checksum address
-        to: '0xdbdbdB2cBD23b783741e8d7fcF51e459b497e4a6', // checksum address
+        from: '0xDBDBDb2Cbd23B783741E8D7FCf51E459B497E4A6', // checksum address
+        to: '0xDBDBDb2Cbd23B783741E8D7FCf51E459B497E4A6', // checksum address
         value: '1234567654321',
         gasPrice: '324234234234'
     }, 'SomePass@Word!'],

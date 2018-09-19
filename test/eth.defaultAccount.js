@@ -5,7 +5,7 @@ var Web3 = require('../packages/web3');
 
 var eth = new Eth();
 
-var setValue = '0x47D33b27Bb249a2DBab4C0612BF9CaF4C1950855';
+var setValue = '0x47d33B27bB249A2dbAB4c0612bf9cAf4c1950855';
 
 describe('web3.eth', function () {
     describe('defaultAccount', function () {

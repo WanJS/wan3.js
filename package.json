@@ -1,9 +1,9 @@
 {
-  "name": "web3",
+  "name": "wan3",
   "private": true,
-  "namespace": "ethereum",
-  "version": "1.0.0-beta.36",
-  "description": "Ethereum JavaScript API wrapper repository",
+  "namespace": "wanchain",
+  "version": "1.0.0-beta.37",
+  "description": "Wanchain JavaScript API wrapper repository",
   "license": "LGPL-3.0",
   "main": "./packages/web3/src/index.js",
   "directories": {
@@ -23,44 +23,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/web3.js.git"
+    "url": "https://github.com/WanJS/wan3.js.git"
   },
-  "homepage": "https://github.com/ethereum/web3.js",
+  "homepage": "https://github.com/WanJS/wan3.js",
   "bugs": {
-    "url    ": "https://github.com/ethereum/web3.js/issues"
+    "url    ": "https://github.com/WanJS/wan3.js/issues"
   },
   "keywords": [
-    "Ethereum",
+    "Wanchain",
     "JavaScript",
     "API"
   ],
-  "author": "ethereum.org",
-  "authors": [
-    {
-      "name": "Fabian Vogelsteller",
-      "email": "fabian@ethereum.org",
-      "homepage": "http://frozeman.de"
-    },
-    {
-      "name": "Marek Kotewicz",
-      "email": "marek@parity.io",
-      "url": "https://github.com/debris"
-    },
-    {
-      "name": "Marian Oancea",
-      "url": "https://github.com/cubedro"
-    },
-    {
-      "name": "Gav Wood",
-      "email": "g@parity.io",
-      "homepage": "http://gavwood.com"
-    },
-    {
-      "name": "Jeffery Wilcke",
-      "email": "jeffrey.wilcke@ethereum.org",
-      "url": "https://github.com/obscuren"
-    }
-  ],
+  "author": "Tyrion70 <tyrion70@gmail.com>",
   "devDependencies": {
     "@types/bignumber.js": "^4.0.2",
     "@types/underscore": "^1.8.0",
@@ -74,8 +48,6 @@
     "coveralls": "^3.0.2",
     "crypto-js": "^3.1.4",
     "del": ">=2.0.2",
-    "ethereumjs-wallet": "^0.6.2",
-    "ethjs-signer": "^0.1.1",
     "exorcist": "^0.4.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^6.1.2",
@@ -90,6 +62,8 @@
     "mocha": ">=2.3.3",
     "sandboxed-module": "^2.0.2",
     "underscore": "^1.8.3",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "wanchainjs-wallet": "^0.6.2",
+    "wanjs-signer": "^0.1.2"
   }
 }
