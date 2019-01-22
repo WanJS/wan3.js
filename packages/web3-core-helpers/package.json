@@ -1,14 +1,14 @@
 {
     "name": "wan3-core-helpers",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.37",
+    "version": "1.0.0-beta.38",
     "description": "Web3 core tools helper for sub packages. This is an internal package.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-core-helpers",
     "license": "LGPL-3.0",
     "main": "src/index.js",
     "dependencies": {
         "underscore": "1.8.3",
-        "wan3-eth-iban": "1.0.0-beta.37",
-        "wan3-utils": "1.0.0-beta.37"
+        "wan3-eth-iban": "1.0.0-beta.38",
+        "wan3-utils": "1.0.0-beta.38"
     }
 }

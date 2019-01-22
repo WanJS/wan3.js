@@ -1,16 +1,16 @@
 {
     "name": "wan3-core-method",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.37",
+    "version": "1.0.0-beta.38",
     "description": "Creates the methods on the wan3 modules. This is an internal package.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-core-method",
     "license": "LGPL-3.0",
     "main": "src/index.js",
     "dependencies": {
         "underscore": "1.8.3",
-        "wan3-core-helpers": "1.0.0-beta.37",
-        "wan3-core-promievent": "1.0.0-beta.37",
-        "wan3-core-subscriptions": "1.0.0-beta.37",
-        "wan3-utils": "1.0.0-beta.37"
+        "wan3-core-helpers": "1.0.0-beta.38",
+        "wan3-core-promievent": "1.0.0-beta.38",
+        "wan3-core-subscriptions": "1.0.0-beta.38",
+        "wan3-utils": "1.0.0-beta.38"
     }
 }

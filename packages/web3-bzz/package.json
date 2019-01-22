@@ -1,7 +1,7 @@
 {
     "name": "wan3-bzz",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.37",
+    "version": "1.0.0-beta.38",
     "description": "Web3 module to interact with the Swarm network.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-bzz",
     "license": "LGPL-3.0",

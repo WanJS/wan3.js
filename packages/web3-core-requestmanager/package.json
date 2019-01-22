@@ -1,16 +1,16 @@
 {
     "name": "wan3-core-requestmanager",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.37",
+    "version": "1.0.0-beta.38",
     "description": "Web3 module to handle requests to external providers.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-core-requestmanager",
     "license": "LGPL-3.0",
     "main": "src/index.js",
     "dependencies": {
         "underscore": "1.8.3",
-        "wan3-core-helpers": "1.0.0-beta.37",
-        "wan3-providers-http": "1.0.0-beta.37",
-        "wan3-providers-ipc": "1.0.0-beta.37",
-        "wan3-providers-ws": "1.0.0-beta.37"
+        "wan3-core-helpers": "1.0.0-beta.38",
+        "wan3-providers-http": "1.0.0-beta.38",
+        "wan3-providers-ipc": "1.0.0-beta.38",
+        "wan3-providers-ws": "1.0.0-beta.38"
     }
 }
