@@ -1,5 +1,7 @@
 **PREVIEW RELEASE** This is a beta preview release with breaking changes! The current stable version is 0.20.0 
+[![Join the chat at https://gitter.im/wandevs/community](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wandevs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![NPM version][npm-image]][npm-url] [![CircleCI][circle-image]][circle-url] [![dependency status][dep-image]][dep-url] [![dev dependency status][dep-dev-image]][dep-dev-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 # wan3.js - Wanchain JavaScript API
 
@@ -141,3 +143,14 @@ npm test
 
 - All contributions have to go into develop, or the 1.0 branch
 - Please follow the code style of the other files, we use 4 spaces as tabs.
+
+[npm-image]: https://badge.fury.io/js/wan3.svg
+[npm-url]: https://npmjs.org/package/wan3
+[circle-image]: https://circleci.com/gh/wandevs/wan3.js.svg?style=svg
+[circle-url]: https://circleci.com/gh/wandevs/wan3.js
+[dep-image]: https://david-dm.org/wandevs/wan3.js.svg
+[dep-url]: https://david-dm.org/wandevs/wan3.js
+[dep-dev-image]: https://david-dm.org/wandevs/wan3.js/dev-status.svg
+[dep-dev-url]: https://david-dm.org/wandevs/wan3.js#info=devDependencies
+[coveralls-image]: https://coveralls.io/repos/wandevs/wan3.js/badge.svg?branch=1.0
+[coveralls-url]: https://coveralls.io/r/wandevs/wan3.js?branch=1.0
