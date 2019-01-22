@@ -131,6 +131,17 @@ var Personal = function Personal() {
             call: 'personal_ecRecover',
             params: 2,
             inputFormatter: [formatters.inputSignFormatter, null]
+        }),
+        new Method({
+            name: 'genRingSignData',
+            call: 'personal_genRingSignData',
+            params: 3,
+        }),
+        new Method({
+            name: 'sendPrivacyCxtTransaction',
+            call: 'personal_sendPrivacyCxtTransaction',
+            params: 2,
+            inputFormatter: [formatters.inputTransactionFormatter, null]
         })
     ];
     methods.forEach(function(method) {
@@ -146,5 +157,3 @@ core.addProviders(Personal);
 
 
 module.exports = Personal;
-
-

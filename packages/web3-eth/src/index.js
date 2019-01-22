@@ -369,6 +369,54 @@ var Eth = function Eth() {
             outputFormatter: formatter.outputLogFormatter
         }),
 
+        // Wanchain methods
+        new Method({
+            name: 'computeOTAPPKeys',
+            call: 'wan_computeOTAPPKeys',
+            params: 2,
+            inputFormatter: [formatter.inputAddressFormatter, null]
+        }),
+        new Method({
+            name: 'generateOneTimeAddress',
+            call: 'wan_generateOneTimeAddress',
+            params: 1,
+            inputFormatter: [null]
+        }),
+        new Method({
+            name: 'getOTABalance',
+            call: 'wan_getOTABalance',
+            params: 2,
+            inputFormatter: [null, formatter.inputDefaultBlockNumberFormatter],
+            outputFormatter: formatter.outputBigNumberFormatter
+        }),
+        new Method({
+            name: 'getOTAMixSet',
+            call: 'wan_getOTAMixSet',
+            params: 2
+        }),
+        new Method({
+            name: 'getSupportStampOTABalances',
+            call: 'wan_getSupportStampOTABalances',
+            params: 0,
+        }),
+        new Method({
+            name: 'getSupportWanCoinOTABalances',
+            call: 'wan_getSupportWanCoinOTABalances',
+            params: 0,
+        }),
+        new Method({
+            name: 'getWanAddress',
+            call: 'wan_getWanAddress',
+            params: 1,
+            inputFormatter: [formatter.inputAddressFormatter]
+        }),
+        new Method({
+            name: 'scanOTAbyAccount',
+            call: 'wan_scanOTAbyAccount',
+            params: 2,
+            inputFormatter: [formatter.inputAddressFormatter,formatter.inputBlockNumberFormatter]
+        }),
+
         // subscriptions
         new Subscriptions({
             name: 'subscribe',
@@ -463,4 +511,3 @@ core.addProviders(Eth);
 
 
 module.exports = Eth;
-
