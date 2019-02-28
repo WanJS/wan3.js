@@ -1,7 +1,7 @@
 {
     "name": "wan3-core-subscriptions",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.38",
+    "version": "1.0.0-beta.39",
     "description": "Manages wan3 subscriptions. This is an internal package.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-core-subscriptions",
     "license": "LGPL-3.0",
@@ -9,6 +9,6 @@
     "dependencies": {
         "eventemitter3": "1.1.1",
         "underscore": "1.8.3",
-        "wan3-core-helpers": "1.0.0-beta.38"
+        "wan3-core-helpers": "1.0.0-beta.39"
     }
 }

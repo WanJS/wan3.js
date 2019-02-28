@@ -1,7 +1,7 @@
 {
     "name": "wan3-utils",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.38",
+    "version": "1.0.0-beta.39",
     "description": "Collection of utility functions used in wan3.js.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-utils",
     "license": "LGPL-3.0",

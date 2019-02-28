@@ -1,7 +1,7 @@
 {
     "name": "wan3-core-promievent",
     "namespace": "wanchain",
-    "version": "1.0.0-beta.38",
+    "version": "1.0.0-beta.39",
     "description": "This package extends eventEmitters with promises to allow chaining as well as multiple final states of a function.",
     "repository": "https://github.com/WanJS/wan3.js/tree/master/packages/wan3-core-promievent",
     "license": "LGPL-3.0",
