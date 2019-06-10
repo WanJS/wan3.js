@@ -16,3 +16,4 @@ bower_components
 dist/
 !./dist/web3.min.js
 lerna-debug.log
+.coveralls.yml
