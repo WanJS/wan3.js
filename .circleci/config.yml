@@ -33,8 +33,10 @@ jobs:
             - v1.0-dependency-cache-{{ checksum "package-lock.json" }}
       - run:
           name: Install deps via npm
-          command: |
-           npm install
+          command: npm install
+      - run:
+          name: test:coverage
+          command: npm run test-coveralls
       - persist_to_workspace:
           root: .
           paths:
