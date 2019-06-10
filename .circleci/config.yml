@@ -1,0 +1,88 @@
+version: 2
+
+workflows:
+  version: 2
+  full_test:
+    jobs:
+      - prep-deps-npm
+      - test-lint:
+          requires:
+            - prep-deps-npm
+      - test-unit:
+          requires:
+            - prep-deps-npm
+      - all-tests-pass:
+          requires:
+            - test-lint
+            - test-unit
+#      - job-publish-release:
+#          filters:
+#            branches:
+#              only: master
+#          requires:
+#            - prep-deps-npm
+#            - all-tests-pass
+jobs:
+  prep-deps-npm:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1.0-dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install npm 6 + deps via npm
+          command: |
+           sudo npm install -g npm@6 && npm install --no-save
+      - persist_to_workspace:
+          root: .
+          paths:
+          - node_modules
+  test-lint:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Test
+          command: npm run lint
+  test-unit:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: test:coverage
+          command: npm run test-coveralls
+  all-tests-pass:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - run:
+          name: All Tests Passed
+          command: echo 'weew - everything passed!'
+#  job-publish-release:
+#    context: NPM
+#    docker:
+#      - image: circleci/node:10
+#    steps:
+#      - checkout
+#      - attach_workspace:
+#          at: .
+#      - run:
+#          name: Authenticate with registry
+#          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/.npmrc
+#      - run:
+#          name: "Publish Release on NPM"
+#          command: npm run bundle
+#      - run:
+#          name: "Publish Release on NPM"
+#          command: npm publish
+#      - store_artifacts:
+#          path: dist
+#          destination: dist
