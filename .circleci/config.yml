@@ -34,13 +34,11 @@ jobs:
       - run:
           name: Install deps via npm
           command: npm install
-      - run:
-          name: test:coverage
-          command: npm run test-coveralls
       - persist_to_workspace:
           root: .
           paths:
           - node_modules
+          - packages
   test-lint:
     docker:
       - image: circleci/node:10
@@ -58,6 +56,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
+      - run:
+          name: build
+          command: npm run build
       - run:
           name: test:coverage
           command: npm run test-coveralls
